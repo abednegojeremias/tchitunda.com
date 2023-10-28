@@ -1,8 +1,10 @@
 :root {
   --first-color: #8415c9;
-  --segund-color: #fff;
+  --second-color: #fff;
   --third-color: #d9d9d9;
   --forth-color: #fdbd23;
+
+  --hover-navbar-color:#201e20;
 
   --box-shadow-service: 0 8px 24px rgb(167, 61, 234);
   --box-shadow-button: 0 8px 24px rgb(32, 14, 43);
@@ -12,7 +14,7 @@
   --h2-font-size: 2rem;
   --h1-font-size: 2.5rem;
   --normal-font-size: 1rem;
-  --smaal-font-size: 0.813rem;
+  --smaal-font-size: .5rem;
   --smaller-font-size: 0.813rem;
 
   --body-font: "Poppins", sans-serif;
@@ -26,30 +28,30 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
+
+  --z-tooltip:10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: var(--segund-color);
+  background: var(--second-color);
 }
 
 a {
   text-decoration: none;
 }
 
-.img {
-  max-width: 100%;
-  height: auto;
-}
 
 li {
   list-style: none;
@@ -64,20 +66,9 @@ input {
   outline: none;
 }
 
-.container {
-  max-width: 1024px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+
+html {
+  scroll-behavior: smooth;
 }
 
-.grid {
-  display: grid;
-}
-.section {
-  padding: 120px 14%;
-}
-
-
-.h1{
-  color: #8415c9;
-}
+ 

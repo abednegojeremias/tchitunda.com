@@ -22,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
-      <link rel="shortcut icon" href="/static/favicon.svg" /> 
+      <head>
+        <link rel="shortcut icon" href="/static/favicon.svg" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" /> 
+      </head>
       <body>{children}</body>
     </html>
   );
