@@ -12,6 +12,7 @@ export const Header = styled("header")`
 `;
 
 export const Nav = styled("nav")`
+  padding-top: 2rem;
   position: relative;
   height: 3.5rem;
   display: flex;

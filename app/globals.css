@@ -4,17 +4,19 @@
   --third-color: #d9d9d9;
   --forth-color: #fdbd23;
 
-  --hover-navbar-color:#201e20;
+  --hover-navbar-color: #201e20;
 
   --box-shadow-service: 0 8px 24px rgb(167, 61, 234);
-  --box-shadow-button: 0 8px 24px rgb(32, 14, 43);
+  --box-shadow-button: 0 8px 24px rgba(32, 14, 43, 0.733);
 
   --biggest-font-size: 3rem;
+  --bigged-font-size: 2.7rem;
+  --big-font-size: 2rem;
   --h3-font-size: 1.5rem;
   --h2-font-size: 2rem;
   --h1-font-size: 2.5rem;
   --normal-font-size: 1rem;
-  --smaal-font-size: .5rem;
+  --smaal-font-size: 0.5rem;
   --smaller-font-size: 0.813rem;
 
   --body-font: "Poppins", sans-serif;
@@ -29,16 +31,16 @@
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
 
-  --z-tooltip:10;
+  --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 html {
   scroll-behavior: smooth;
@@ -51,7 +53,6 @@ body {
 a {
   text-decoration: none;
 }
-
 
 li {
   list-style: none;
@@ -66,9 +67,6 @@ input {
   outline: none;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
- 

@@ -1,7 +1,7 @@
 import "./globals.css";
 import React from "react";
 import Navbar from "./components/layout/navbar/Navbar";
-
+import Header from "./components/layout/header/Header";
 
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <main>
      <Navbar />
+     <Header />
     </main>
   )
 }
