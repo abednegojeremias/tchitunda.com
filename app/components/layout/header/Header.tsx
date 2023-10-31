@@ -12,10 +12,7 @@ export default function Home() {
 
                         <HomeSubtitle>BRING YOUR IDEAS TO LIFE</HomeSubtitle>
                         <HomeTitle>If you can imagine, <HomeSpan>we can project.</HomeSpan> </HomeTitle>
-                        <HomeDescriptions> 
-                            <i className="ri-shield-check-fill"></i> 
-                            THE BEST SOLUTIONS!
-                        </HomeDescriptions>
+                        <HomeDescriptions> <i className="ri-shield-check-fill"></i> THE BEST SOLUTIONS! </HomeDescriptions>
                         <HomeButton href="/">
                             Get Started <i className="ri-send-plane-fill"></i>
                         </HomeButton>

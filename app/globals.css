@@ -3,6 +3,7 @@
   --second-color: #fff;
   --third-color: #d9d9d9;
   --forth-color: #fdbd23;
+  --fifth-color:#201e20;
 
   --hover-navbar-color: #201e20;
 
@@ -48,6 +49,7 @@ html {
 
 body {
   background: var(--second-color);
+  font-family: var(--body-font)
 }
 
 a {
@@ -69,4 +71,11 @@ input {
 
 html {
   scroll-behavior: smooth;
+}
+
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
 }
