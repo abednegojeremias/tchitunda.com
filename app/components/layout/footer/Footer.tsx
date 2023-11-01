@@ -2,11 +2,11 @@
 import "../../../globals.css";
 import styles from "../../../page.module.css";
 import React from "react";
-import { Footer, FooterContainer, FooterContent, Image, LogoImage,FooterCards, FooterDescriptions, FooterSM,FooterLink, CardTitle, CardDescriptions, FooterCopyRightText, I, CardList } from "./Footer.styles";
+import { Footers, FooterContainer, FooterContent, Image, LogoImage,FooterCards, FooterDescriptions, FooterSM,FooterLink, CardTitle, CardDescriptions, FooterCopyRightText, I, CardList } from "./Footer.styles";
 import { footers } from "../../../models/FooterModels";
-export default function (){
+export default function Footer(){
     return (
-        <Footer>
+        <Footers>
             <FooterContainer className={`${styles.container} ${styles.grid}`}>
                 <FooterContent>
                       <LogoImage>
@@ -37,7 +37,7 @@ export default function (){
             </FooterContainer>
             <hr className={styles.container} />
             <FooterCopyRightText>© 2024 Tchitunda. All Rights Reserved.</FooterCopyRightText>
-        </Footer>
+        </Footers>
 
     )
 }

@@ -12,7 +12,7 @@ interface Footer {
     descriptions5?:string;
     link5?:string;
     icons?:string;
-    src?:string;
+  
 
 }
 
@@ -26,12 +26,12 @@ export const footers: Footer [] =[
         link1:"",
         descriptions2:"About",
         link2:"",
-        descriptions3:"Price",
+        descriptions3:"Recents Works",
         link3:"",
-        descriptions4:"",
+        descriptions4:"Contact",
         link4:"",
-        descriptions5:"Home",
-        src:"/images/transparents.png"
+      
+  
   
     },
     {
@@ -42,7 +42,7 @@ export const footers: Footer [] =[
         link2:"",
         descriptions3:"Website Development",
         link3:"",
-        src:"/images/transparents.png"
+
  
     },
     {
@@ -53,7 +53,6 @@ export const footers: Footer [] =[
         link2:"",
         descriptions3:"Prices",
         link3:"",
-        src:"/images/transparents.png"
        
     },
 

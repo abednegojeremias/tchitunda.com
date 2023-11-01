@@ -1,11 +1,11 @@
 import "../../../globals.css";
 import { styled } from "@mui/system";
 
-export const Footer = styled("div")`
+export const Footers = styled("div")`
   position: relative;
   width: 100%;
   height: auto;
-  padding: 70px 100px;
+  padding: 70px 50px;
   line-height: 30px;
 
   @media screen and (max-width: 991px) {

@@ -25,6 +25,45 @@
 .section {
   padding-block: 5rem 2rem;
 }
+
+.sectiontitle{
+  text-align: center;
+  font-size: 2rem;
+}
+@media screen and (min-width: 320px) {
+  .sectiontitle{
+    font-size: 1.5rem;
+  }
+}
+.sectionsubtitle{
+  text-align: center;
+  position: relative;
+  color: #8415c9;
+  font-size: 2rem;
+  
+}
+
+.sectionsubtitle ::before{
+  content: " ";
+  position: absolute;
+  width: 15%;
+  border-radius: 3px;
+  border-top: 6px solid #8415c9;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.sectiondescription{
+  text-align: center;
+  max-width: 600px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
 @media screen and (min-width: 1024px) {
   .section {
     padding-block: 7rem 4rem;
@@ -34,7 +73,4 @@
   .section {
     padding-block: 7rem 6rem;
   }
-}
-.sectiontitle .sectionsubtitle {
-  text-align: center;
 }

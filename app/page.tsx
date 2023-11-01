@@ -3,6 +3,8 @@ import React from "react";
 import Navbar from "./components/layout/navbar/Navbar";
 import Header from "./components/layout/header/Header";
 import Footer from "./components/layout/footer/Footer";
+import About from "./components/modules/about/About";
+import Service from "./components/modules/services/Services";
 
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
     <main>
      <Navbar />
      <Header />
+     <About />
+     <Service />
      <Footer />
     </main>
   )
