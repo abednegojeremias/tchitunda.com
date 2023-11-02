@@ -5,6 +5,8 @@ import Header from "./components/layout/header/Header";
 import Footer from "./components/layout/footer/Footer";
 import About from "./components/modules/about/About";
 import Service from "./components/modules/services/Services";
+import NextProject from "./components/modules/nextproject/nextproject";
+import Detailshome from "./components/modules/detailshome/Detailshome";
 
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
      <Header />
      <About />
      <Service />
+     <Detailshome />
+     <NextProject />
      <Footer />
     </main>
   )

@@ -23,9 +23,7 @@ export const AboutContainer = styled("div")`
   }
 `;
 export const AboutData = styled("div")`
-  @media screen and (min-width: 320px) {
-    text-align: center;
-  }
+ 
   @media screen and (min-width: 768px) {
     order: 1;
   }
@@ -38,14 +36,9 @@ export const AboutTitle = styled("h3")`
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
   color: var(--first-color);
-
-  @media screen and (min-width: 320px) {
-    border-left: none;
-  }
-  @media screen and (min-width: 1023px) {
-    border-left: 10px solid var(--first-color);
-    padding-left: 20px;
-  }
+  font-size: var(--h3-font-size);
+  border-left: 10px solid var(--first-color);
+  padding-left: 20px;
 `;
 export const AboutDescription = styled("p")`
   margin-bottom: 2rem;
@@ -88,6 +81,10 @@ export const AboutFilters = styled("div")`
   display: flex;
   justify-content: space-between;
   column-gap: 0.6rem;
+  
+  @media screen and (min-width: 320px) {
+    text-align: center;
+  }
 
   @media screen and (min-width: 320px) {
     display: grid;
