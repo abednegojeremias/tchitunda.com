@@ -8,7 +8,7 @@ import { services } from "../../../models/SercicesModels";
 export default function Service (){
     return (
     <Section>
-            <Services className={`${styles.container} ${styles.grid}`}>
+            <Services className={styles.container}>
                 <SectionTitle className={styles.sectiontitle}>SERVICE</SectionTitle>
                 <SectionSubtitle className={styles.sectionsubtitle}>Our services</SectionSubtitle>
                 <SectionDescription className={styles.sectiondescription}>

@@ -1,30 +1,40 @@
 import "../../../globals.css";
-import styled, { StyledTags } from "@emotion/styled";
+import styled from "@emotion/styled";
 
 export const Abouts = styled("div")`
-  margin-top: 130px;
-
   @media screen and (min-width: 1023px) {
     display: grid;
     place-content: center;
-    margin-bottom: 8rem;
   }
 `;
+
 export const AboutContainer = styled("div")`
- 
-  
+  display: grid;
+
+  display: grid;
+
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr !important;
   }
+
   @media screen and (min-width: 1023px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 400px 400px !important;
     align-items: center;
-    display: grid;
+    column-gap: 8rem;
+  }
+
+  @media screen and (min-width: 1040px) {
+    grid-template-columns: 400px 400px !important;
+    align-items: center;
+    column-gap: 8rem;
+  }
+  @media screen and (min-width: 1260px) {
+    grid-template-columns: 400px 470px !important;
+    column-gap: 10rem;
   }
 `;
 export const AboutData = styled("div")`
- 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1022px) {
     order: 1;
   }
   @media screen and (min-width: 1024px) {
@@ -81,7 +91,7 @@ export const AboutFilters = styled("div")`
   display: flex;
   justify-content: space-between;
   column-gap: 0.6rem;
-  
+
   @media screen and (min-width: 320px) {
     text-align: center;
   }
@@ -101,14 +111,17 @@ export const AboutFilters = styled("div")`
   }
 `;
 export const AboutImage = styled("div")`
-  position: relative;
   display: flex;
   justify-content: center;
-  height: 260px;
-  @media screen and (min-width: 1024px) {
+  height: 230px;
+
+  @media screen and (min-width: 1040px) {
     height: 400px;
-    margin-inline: -4rem;
   }
+  @media screen and (min-width: 1024px) and (max-width: 1039px) {
+    height: 320px;
+  }
+
   @media screen and (min-width: 320px) {
     margin-top: 1.5rem;
   }
@@ -116,4 +129,5 @@ export const AboutImage = styled("div")`
 
 export const Image = styled("img")`
   justify-self: center;
+  display: grid;
 `;

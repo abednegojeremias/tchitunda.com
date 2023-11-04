@@ -7,6 +7,7 @@ import About from "./components/modules/about/About";
 import Service from "./components/modules/services/Services";
 import NextProject from "./components/modules/nextproject/nextproject";
 import Detailshome from "./components/modules/detailshome/Detailshome";
+import Portfolio from "./components/modules/portfolio/Portfolio";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
      <About />
      <Service />
      <Detailshome />
+     <Portfolio />
      <NextProject />
      <Footer />
     </main>

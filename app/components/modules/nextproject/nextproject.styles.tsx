@@ -2,6 +2,7 @@ import "../../../globals.css";
 import { styled } from "@mui/system";
 
 export const Section = styled("section")`
+margin-bottom: 4rem;
   @media screen and (min-width: 1023px) {
     display: flex;
     place-content: center;

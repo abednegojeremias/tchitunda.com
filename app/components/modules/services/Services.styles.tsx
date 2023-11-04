@@ -2,7 +2,6 @@ import "../../../globals.css";
 import { styled } from "@mui/system";
 
 export const Section = styled("section")`
-
   background-color: var(--sixth-color);
   @media screen and (min-width: 320px) {
     padding: 20px;
@@ -15,10 +14,8 @@ export const Section = styled("section")`
   }
 `;
 export const Services = styled("div")`
-  row-gap: 2rem;
-  padding-block: 1rem;
+  padding-block: 4rem;
   display: grid;
-  
 `;
 export const ServiceContainer = styled("div")`
   max-width: 1120px;
@@ -50,9 +47,6 @@ export const ServiceCard = styled("div")`
   :hover {
     box-shadow: 0 8px 24px rgb(167, 61, 234);
   }
-  /* @media screen and (min-width: 320px) {
-    text-align: center;
-  } */
 `;
 export const ServiceTitle = styled("h2")`
   margin-bottom: 1rem;
@@ -60,7 +54,7 @@ export const ServiceTitle = styled("h2")`
 `;
 export const ServicesDescription = styled("p")``;
 export const Image = styled("img")`
-  margin-bottom: 1rem ;
+  margin-bottom: 1rem;
   border-radius: 7px;
   padding: 10px;
   width: 50px;

@@ -9,7 +9,7 @@ export default function () {
        <Section className={`${styles.section} ${styles.grid}`}>
          <DetailHomes className={styles.container}>
             <DetailData>
-                <DetailTitle>HOW IT WORKS</DetailTitle>
+                <DetailTitle>HOW DESIGN WORKS</DetailTitle>
                 <DetailSubtitle>We love bringing ideas to life and bringing perfect solutions for your business.</DetailSubtitle>
                 <DetailDescription>
                     Every idea is a seed of potential, a spark that can grow into
@@ -18,7 +18,7 @@ export default function () {
                     project, ready to embrace challenges and seek solutions that not
                     only meet, but exceed your expectations
                 </DetailDescription>
-                <DetailButton href="" >Get Started <i className="ri-send-plane-fill"></i> </DetailButton>
+                <DetailButton href="" >Learn More <i className="ri-send-plane-fill"></i> </DetailButton>
             </DetailData>
             <DetailStaps>
                 {detailshomestaps.map((detailshomestap, index)=> (
