@@ -2,6 +2,7 @@
 import "../../../globals.css";
 import styles from "../../../page.module.css";
 import React, { useState } from "react";
+import { timeworks } from "../../../models/AboutTimeworks.Models";
 import {
   Abouts,
   AboutData,
@@ -12,6 +13,13 @@ import {
   AboutContainer,
   AboutImage,
   Image,
+  HR,
+  TimeWorks,
+  TimeWorkData,
+  TimeworkBox,
+  TimeWorkIcon,
+  TimeWorkTitle,
+  TimeWorkSubtitle,
 } from "./About.styles";
 
 export default function About() {
@@ -103,6 +111,19 @@ export default function About() {
           <Image src="/images/time-2.png" />
         </AboutImage>
       </AboutContainer>
+      <HR />
+
+      <TimeWorks>
+        <TimeWorkData>
+          {timeworks.map((timework, index) => (
+            <TimeworkBox key={index}>
+              <TimeWorkIcon  className={timework.icon}/>
+              <TimeWorkTitle>{timework.title}</TimeWorkTitle>
+              <TimeWorkSubtitle>{timework.subtitle}</TimeWorkSubtitle>
+            </TimeworkBox>
+          ))}
+        </TimeWorkData>
+      </TimeWorks>
     </Abouts>
   );
 }

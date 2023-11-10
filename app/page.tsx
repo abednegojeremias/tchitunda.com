@@ -6,22 +6,33 @@ import Footer from "./components/layout/footer/Footer";
 import About from "./components/modules/about/About";
 import Service from "./components/modules/services/Services";
 import NextProject from "./components/modules/nextproject/nextproject";
-import Detailshome from "./components/modules/detailshome/Detailshome";
+import Detailsdesign from "./components/modules/details/detailsdesign/Detailsdesign";
 import Portfolio from "./components/modules/portfolio/Portfolio";
-
+import Plans from "./components/modules/plans/Plans";
+import Detailsmarketing from "./components/modules/details/detailsmarketing/Detailsmarketing";
+import Detailswebsites from "./components/modules/details/detailswebsites/Detailswebsites";
+import Questions from "./components/modules/questions/Questions";
+import Clients from "./components/modules/clients/clients";
+import Details from "./components/modules/callaction/Callaction";
 
 export default function Home() {
-  console.log('<Home> está sendo renderizada no servidor');
+  console.log("<Home> está sendo renderizada no servidor");
   return (
     <main>
-     <Navbar />
-     <Header />
-     <About />
-     <Service />
-     <Detailshome />
-     <Portfolio />
-     <NextProject />
-     <Footer />
+      <Navbar />
+      <Header />
+      <About />
+      <Service />
+      <Detailsdesign />
+      <Portfolio />
+      <Detailsmarketing />
+      <NextProject />
+      <Plans />
+      <Detailswebsites />
+      <Clients />
+      <Details />
+      <Questions />
+      <Footer />
     </main>
-  )
+  );
 }

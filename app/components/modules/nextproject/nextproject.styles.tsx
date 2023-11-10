@@ -2,19 +2,24 @@ import "../../../globals.css";
 import { styled } from "@mui/system";
 
 export const Section = styled("section")`
-margin-bottom: 4rem;
+  background-color: var(--sixth-color);
+  margin-bottom: 4rem;
+
   @media screen and (min-width: 1023px) {
     display: flex;
     place-content: center;
   }
 `;
-export const NextProjects = styled("div")``;
+
+export const NextProjects = styled("div")`
+  margin: 0;
+`;
+
 export const NextProjectsContent = styled("div")`
   position: relative;
   background-color: var(--first-color);
   border-radius: 1rem;
   padding: 5rem 1rem 3rem;
-
   overflow: hidden;
 
   @media screen and (min-width: 320px) {
@@ -29,8 +34,9 @@ export const NextProjectsContent = styled("div")`
     border-radius: 1rem;
     display: grid;
   }
+
   @media screen and (min-width: 1024px) {
-    grid-template-columns: 314px 249px;
+    grid-template-columns: 582px 261px;
     display: grid;
     align-items: center;
     column-gap: 6rem;
@@ -42,53 +48,66 @@ export const NextProjectsContent = styled("div")`
 
 export const NextProjectsData = styled("div")`
   color: var(--second-color);
+
   @media screen and (min-width: 320px) and (max-width: 1022px) {
     text-align: center;
     margin-top: -4rem;
   }
 `;
+
 export const NextProjectsTitle = styled("h4")`
   font-size: 1.2em;
   font-weight: 300;
+
   @media screen and (min-width: 320px) and (max-width: 768px) {
     font-size: 1.1rem;
   }
+
   @media screen and (min-width: 768px) {
     font-size: var(--h3-font-size);
   }
 `;
+
 export const NextProjectsSubtitle = styled("h3")`
   font-size: 2.3rem;
   font-weight: 400;
+
   @media screen and (min-width: 320px) and (max-width: 768px) {
     font-size: 1.2rem;
   }
+
   @media screen and (min-width: 768px) {
     font-size: var(--biggest-font-size);
   }
+
   @media screen and (min-width: 1024px) {
-    font-size: 2.5rem;
+    font-size: var(--h1-font-size);
   }
 `;
+
 export const NextProjectsDescription = styled("h2")`
   font-size: var(--big-font-size);
   font-weight: 700 !important;
+
   @media screen and (min-width: 320px) and (max-width: 768px) {
     font-size: 1.4rem;
   }
+
   @media screen and (min-width: 768px) {
     font-size: 4rem !important;
   }
+
   @media screen and (min-width: 1024px) {
-    font-size: 2.5rem !important;
+    font-size: 3.5rem !important;
   }
 `;
+
 export const NextProjectsButton = styled("a")`
   display: inline-block;
   background-color: var(--second-color);
   padding: 1.125rem 3rem;
   border-radius: var(--smaal-font-size);
-  width: 100%;
+  width: 74%;
   text-align: center;
   color: var(--first-color);
   transition: box-shadow 0.4s;

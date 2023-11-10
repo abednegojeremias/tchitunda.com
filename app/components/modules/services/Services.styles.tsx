@@ -36,7 +36,7 @@ export const ServiceContainer = styled("div")`
   }
 `;
 export const ServiceCard = styled("div")`
-  background-color: #fff;
+  background-color: var(--second-color);
   border-radius: 0.5rem;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -59,7 +59,7 @@ export const Image = styled("img")`
   padding: 10px;
   width: 50px;
   height: 50px;
-  background-color: #8415c9;
+  background-color: var(--first-color);
   font-size: 0.5rem;
 `;
 

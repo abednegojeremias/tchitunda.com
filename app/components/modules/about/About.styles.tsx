@@ -11,8 +11,6 @@ export const Abouts = styled("div")`
 export const AboutContainer = styled("div")`
   display: grid;
 
-  display: grid;
-
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr !important;
   }
@@ -76,7 +74,6 @@ export const AboutButton = styled("a")`
   cursor: pointer;
   background-color: transparent;
   transition: 0.3s;
-
   text-align: center;
 
   @media screen and (min-width: 320px) {
@@ -130,4 +127,62 @@ export const AboutImage = styled("div")`
 export const Image = styled("img")`
   justify-self: center;
   display: grid;
+`;
+
+export const HR = styled("hr")`
+  max-width: 25%;
+  margin-top: 4rem;
+  border: 1px solid var(--first-color);
+`;
+
+export const TimeWorks = styled("section")`
+  padding: 1px 0;
+  text-align: center;
+  margin: 100px auto;
+  @media screen and (max-width: 768px) {
+    padding: 1px 0;
+    text-align: center;
+    margin: 100px auto;
+  }
+`;
+export const TimeWorkData = styled("div")`
+  grid-template-columns: repeat(3, 180px);
+  column-gap: 5rem;
+  justify-content: center;
+  display: grid;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 100px);
+    column-gap: 1rem;
+    justify-content: center;
+    display: grid;
+  }
+  @media screen and (max-width: 320px) {
+    grid-template-columns: repeat(3, 90px);
+    column-gap: 1rem;
+    justify-content: center;
+    display: grid;
+  }
+`;
+export const TimeworkBox = styled("div")``;
+export const TimeWorkIcon = styled("i")`
+font-size: 2rem;
+color: var(--first-color);
+
+`;
+export const TimeWorkTitle = styled("h3")`
+
+@media screen and (min-width: 320px){
+  font-size: .7rem;
+}
+@media screen and (min-width: 768px){
+  font-size: 1rem;
+}
+font-size: 1.5rem;
+color: var(--first-color);
+`;
+export const TimeWorkSubtitle = styled("span")`
+@media screen and (min-width: 320px){
+  font-size: .8rem;
+}
 `;
