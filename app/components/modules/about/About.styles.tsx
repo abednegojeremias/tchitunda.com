@@ -31,6 +31,7 @@ export const AboutContainer = styled("div")`
     column-gap: 10rem;
   }
 `;
+
 export const AboutData = styled("div")`
   @media screen and (min-width: 1022px) {
     order: 1;
@@ -39,6 +40,7 @@ export const AboutData = styled("div")`
     text-align: left;
   }
 `;
+
 export const AboutTitle = styled("h3")`
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -48,6 +50,7 @@ export const AboutTitle = styled("h3")`
   border-left: 10px solid var(--first-color);
   padding-left: 20px;
 `;
+
 export const AboutDescription = styled("p")`
   margin-bottom: 2rem;
 `;
@@ -63,6 +66,7 @@ export const AboutSubtitle = styled("h2")`
     font-size: var(--h3-font-size);
   }
 `;
+
 export const AboutButton = styled("a")`
   width: 70%;
   border: none;
@@ -80,6 +84,7 @@ export const AboutButton = styled("a")`
     width: 100%;
   }
 `;
+
 export const AboutFilters = styled("div")`
   margin: 2rem 0 2.5rem;
   background-color: var(--sixth-color);
@@ -107,6 +112,7 @@ export const AboutFilters = styled("div")`
     font-size: 0.9rem;
   }
 `;
+
 export const AboutImage = styled("div")`
   display: flex;
   justify-content: center;
@@ -145,6 +151,7 @@ export const TimeWorks = styled("section")`
     margin: 100px auto;
   }
 `;
+
 export const TimeWorkData = styled("div")`
   grid-template-columns: repeat(3, 180px);
   column-gap: 5rem;
@@ -164,25 +171,26 @@ export const TimeWorkData = styled("div")`
     display: grid;
   }
 `;
-export const TimeworkBox = styled("div")``;
-export const TimeWorkIcon = styled("i")`
-font-size: 2rem;
-color: var(--first-color);
 
+export const TimeworkBox = styled("div")``;
+
+export const TimeWorkIcon = styled("i")`
+  font-size: 2rem;
+  color: var(--first-color);
 `;
 export const TimeWorkTitle = styled("h3")`
-
-@media screen and (min-width: 320px){
-  font-size: .7rem;
-}
-@media screen and (min-width: 768px){
-  font-size: 1rem;
-}
-font-size: 1.5rem;
-color: var(--first-color);
+  @media screen and (min-width: 320px) {
+    font-size: 0.7rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+  font-size: 1.5rem;
+  color: var(--first-color);
 `;
+
 export const TimeWorkSubtitle = styled("span")`
-@media screen and (min-width: 320px){
-  font-size: .8rem;
-}
+  @media screen and (min-width: 320px) {
+    font-size: 0.8rem;
+  }
 `;

@@ -2,14 +2,14 @@ import "../../../globals.css";
 import { styled } from "@mui/system";
 
 export const Footers = styled("div")`
-  max-width: 1305px;
+  max-width: 1212px;
   position: relative;
   width: 100%;
   height: auto;
   padding: 70px 50px;
   line-height: 30px;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width:  1152px) {
     margin-inline: auto;
   }
 

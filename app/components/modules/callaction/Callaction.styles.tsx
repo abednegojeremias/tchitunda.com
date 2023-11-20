@@ -23,7 +23,6 @@ export const CallActionData = styled("div")`
   text-align: center;
   max-width: 600px;
   text-align: center;
-  overflow: hidden;
   text-overflow: ellipsis;
   margin: 0 auto;
   text-align: center;

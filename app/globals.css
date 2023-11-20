@@ -3,8 +3,9 @@
   --second-color: #fff;
   --third-color: #d9d9d9;
   --forth-color: #fdbd23;
-  --fifth-color:#201e20;
-  --sixth-color:#f8f8f8;
+  --fifth-color: #161717;
+  --sixth-color: #f8f8f8;
+  --seventh-color: #ffffffc0;
 
   --hover-navbar-color: #201e20;
 
@@ -18,7 +19,7 @@
   --h2-font-size: 2rem;
   --h1-font-size: 2.5rem;
   --normal-font-size: 1rem;
-  --smaal-font-size: .5rem;
+  --smaal-font-size: 0.5rem;
   --smaller-font-size: 0.813rem;
 
   --body-font: "Poppins", sans-serif;
@@ -50,7 +51,7 @@ html {
 
 body {
   background: var(--second-color);
-  font-family: var(--body-font)
+  font-family: var(--body-font);
 }
 
 a {
@@ -74,7 +75,7 @@ html {
   scroll-behavior: smooth;
 }
 
-hr{
+hr {
   width: 100%;
   border: 0;
   border-bottom: 1px solid #ccc;

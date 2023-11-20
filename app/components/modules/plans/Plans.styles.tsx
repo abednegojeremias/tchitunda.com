@@ -11,7 +11,6 @@ export const PlanContainer = styled("div")`
   padding-block: 1rem;
   display: grid;
 
-  
   @media screen and (min-width: 320px) {
     grid-template-columns: repeat(1, 290px);
     gap: 1.5rem;
@@ -79,13 +78,15 @@ export const CardButton = styled("a")`
 `;
 export const CardTitle = styled("h1")`
   font-size: 2rem;
+  color: var(--first-color);
 `;
-export const CardSubtitle = styled("h4")`
- 
-`;
+export const CardSubtitle = styled("h4")``;
 export const CardIcon = styled("i")`
   font-size: 2rem;
   margin-right: 0.5rem;
   color: #8415c9;
 `;
-export const CardDescription = styled("p")``;
+export const CardDescription = styled("p")`
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+`;

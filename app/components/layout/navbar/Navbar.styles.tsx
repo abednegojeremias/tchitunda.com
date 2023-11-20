@@ -9,10 +9,10 @@ export const Header = styled("header")`
   left: 0;
   background-color: var(--first-color);
   z-index: var(--z-fixed);
+  transition: box-shadow 0.4s;
 `;
 
 export const Nav = styled("nav")`
-  padding-top: 2rem;
   position: relative;
   height: 3.5rem;
   display: flex;
@@ -26,16 +26,20 @@ export const Nav = styled("nav")`
 
 export const NavLogo = styled("a")`
   display: flex;
+  column-gap: 0.5rem;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 1023px) {
+    display: grid;
+    place-content: center;
+  }
 `;
 
 export const Image = styled("img")`
-  display: grid;
-  height: auto;
   width: 40px;
   height: 40px;
-  column-gap: 0.5rem;
+  display: grid;
+  place-items: center;
 `;
 
 export const NavMenu = styled("div")`
@@ -56,8 +60,9 @@ export const NavMenu = styled("div")`
 export const NavList = styled("ul")`
   display: flex;
   flex-direction: column;
-  row-gap: 5.5rem;
+  gap: 2.5rem;
   list-style: none;
+  color: var(--second-color);
 
   @media screen and (min-width: 1023px) {
     margin-left: auto;
@@ -70,20 +75,12 @@ export const NavList = styled("ul")`
   }
 `;
 
-export const NavItem = styled("li")`
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-`;
-
-export const NavLink = styled("a")`
+export const NavItem = styled("span")`
   color: var(--second-color);
-  font-weight: 0.5rem;
   transition: color 0.4s;
   text-decoration: none;
-
   :hover {
-    color: var(--hover-navbar-color);
+    color: var(--fifth-color);
   }
 `;
 

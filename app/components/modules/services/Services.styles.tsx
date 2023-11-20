@@ -52,7 +52,9 @@ export const ServiceTitle = styled("h2")`
   margin-bottom: 1rem;
   font-size: 1rem;
 `;
-export const ServicesDescription = styled("p")``;
+export const ServicesDescription = styled("p")`
+  color: var(--fifth-color);
+`;
 export const Image = styled("img")`
   margin-bottom: 1rem;
   border-radius: 7px;
@@ -62,7 +64,3 @@ export const Image = styled("img")`
   background-color: var(--first-color);
   font-size: 0.5rem;
 `;
-
-export const SectionTitle = styled("h2")``;
-export const SectionSubtitle = styled("h3")``;
-export const SectionDescription = styled("p")``;

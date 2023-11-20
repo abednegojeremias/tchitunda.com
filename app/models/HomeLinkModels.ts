@@ -4,6 +4,6 @@ interface HomeLink {
 
 export const homelink: HomeLink [] = [
     {
-        link:"/",
+        link:"https://www.tchitunda.com",
     },
 ]

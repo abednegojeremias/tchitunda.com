@@ -1,20 +1,13 @@
 .container {
-  max-width: 1204px;
+  max-width: 1120px;
   margin-inline: 1.5rem;
 }
 
-/* @media screen and (min-width: 320px) {
-  .container {
-    margin-inline: 1.5rem;
-  }
-} */
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1152px) {
   .container {
     margin-inline: auto;
   }
 }
-
 
 .img {
   max-width: 100%;
@@ -64,4 +57,9 @@
   .section {
     padding-block: 7rem 6rem;
   }
+}
+
+/******NAVBAR******/
+.active {
+  color: #161717;
 }

@@ -12,6 +12,8 @@ interface Plans {
   description3?: string;
   description4?: string;
   description5?: string;
+  description6?: string;
+  description7?: string;
 }
 
 export const plan: Plans[] = [
@@ -19,16 +21,18 @@ export const plan: Plans[] = [
     src: "",
     title: "Basic",
     subtitle: "Graphic Design",
-    number: "R1000",
+    number: "R300",
     link: "",
     icon: "ri-check-line",
     button: "Talk to Us",
     month: "/month",
-    description1: "",
-    description2: "",
-    description3: "",
-    description4: "",
-    description5: "",
+    description1: "Facebook e Instagram",
+    description2: "6 Postagens mensais (Máx. de 3 carrosséis)",
+    description3: " Criação de artes para os Posts",
+    description4: " Planejamento",
+    description5: " Cronograma para as postagens",
+    description6: "  Harmonização do feed",
+    description7: " Revisão de conteúdo",
   },
   {
     src: "",

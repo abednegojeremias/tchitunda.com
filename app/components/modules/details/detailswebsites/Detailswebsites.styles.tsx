@@ -3,6 +3,10 @@ import { styled } from "@mui/system";
 
 export const Section = styled("section")`
   background-color: var(--sixth-color);
+  @media screen and (min-width: 1023px) {
+    display: grid;
+    place-content: center;
+  }
 `;
 
 export const DetailHomes = styled("div")`
@@ -68,7 +72,7 @@ export const DetailButton = styled("a")`
 `;
 
 export const DetailStaps = styled("div")``;
-export const DetailStapsList = styled("div")``;
+export const DetailStapsList = styled("li")``;
 
 export const DetailStapsIcon = styled("i")`
   margin-bottom: 1rem;
@@ -93,4 +97,9 @@ export const DetailStapsTitle = styled("h3")`
 
 export const DetailStapsDescription = styled("p")`
   margin-bottom: 1rem;
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    margin-left: 3.8rem;
+  }
 `;

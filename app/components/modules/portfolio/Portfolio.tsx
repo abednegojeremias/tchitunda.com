@@ -26,7 +26,7 @@ export default function () {
     setActiveCard(null);
   };
   return (
-    <Section className={styles.section}>
+    <Section className={styles.section} id="portfolio">
       <h2 className={styles.sectiontitle}>PORTFOLIO</h2>
       <h3 className={styles.sectionsubtitle}>Our recente works</h3>
       <p className={styles.sectiondescription}>

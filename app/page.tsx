@@ -14,6 +14,7 @@ import Detailswebsites from "./components/modules/details/detailswebsites/Detail
 import Questions from "./components/modules/questions/Questions";
 import Clients from "./components/modules/clients/clients";
 import Details from "./components/modules/callaction/Callaction";
+import Contact from "./components/modules/contact/Contact";
 
 export default function Home() {
   console.log("<Home> está sendo renderizada no servidor");
@@ -30,8 +31,9 @@ export default function Home() {
       <Plans />
       <Detailswebsites />
       <Clients />
-      <Details />
+      <Contact />
       <Questions />
+      <Details />
       <Footer />
     </main>
   );

@@ -30,7 +30,7 @@ export default function About() {
   };
 
   return (
-    <Abouts className={`${styles.section} ${styles.grid}`}>
+    <Abouts className={`${styles.section} ${styles.grid}`} id="about">
       <AboutContainer
         className={`${styles.container} ${styles.aboutcontainer}`}
       >
@@ -78,9 +78,8 @@ export default function About() {
             {aboutOption === "option1" && (
               <p>
                 We are an all-in-one agency, bringing together a collective of
-                creative minds in design, web design and marketing, with global
-                reach, paving the way for more creative easy, quick and
-                efficient
+                creative minds in Design, Developers and Marketing Experts,
+                paving the way for more creative easy, quick and efficient.
               </p>
             )}{" "}
           </>
@@ -102,7 +101,7 @@ export default function About() {
                 art and driven by solving challenges. With more than 5 years of
                 expertise, we follow the path of brand development and
                 implementation in the digital universe. Join us and witness the
-                passion that we infuse into each project
+                passion that we infuse into each project!
               </p>
             )}{" "}
           </>
@@ -117,7 +116,7 @@ export default function About() {
         <TimeWorkData>
           {timeworks.map((timework, index) => (
             <TimeworkBox key={index}>
-              <TimeWorkIcon  className={timework.icon}/>
+              <TimeWorkIcon className={timework.icon} />
               <TimeWorkTitle>{timework.title}</TimeWorkTitle>
               <TimeWorkSubtitle>{timework.subtitle}</TimeWorkSubtitle>
             </TimeworkBox>
