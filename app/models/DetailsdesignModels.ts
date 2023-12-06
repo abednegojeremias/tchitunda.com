@@ -1,26 +1,26 @@
 interface DetailsHomeStaps {
-  icon: string;
+  number: string;
   title: string;
   description: string;
 }
 
 export const detailshomestaps: DetailsHomeStaps[] = [
   {
-    icon: "ri-file-text-fill",
-    title: "1. Submit your requestur ",
+    number: "1",
+    title: "Submit your requestur ",
     description:
-      "Our AI-powered request form makes creative briefs a breeze. From built-in stock libraries to custom brand guides, you provide guidance on your vision in one place.",
+      "Whether through our conventional chat or WhatsApp, the first step is easy. Share your vision, ideas and requirements. We are ready to listen and turn your ideas into reality.",
   },
   {
-    icon: "ri-pencil-ruler-2-fill",
-    title: "2. Your Designer Gets to Work",
+    number: "2",
+    title: "Your Designer Gets to Work",
     description:
-      "We assign work immediately based on the requirements in your project. Enjoy same-day turnaround on certain projects with some plans.",
+      "Your designer springs into action as soon as we receive your request. Every detail is carefully considered to create a design that meets your expectations.",
   },
   {
-    icon: "ri-image-2-line",
-    title: "3. You have got a Design",
+    number: "3",
+    title: "You have got a Design",
     description:
-      "And if it’s not perfect? No problem! Our platform makes revision feedback simple and concise. Plus, all of our plans include unlimited revisions, and access to all source files.",
+      "What if it's not perfect? No problem! Our designers make review feedback simple and concise. Plus, all of our plans include unlimited revisions and access to all original files",
   },
 ];

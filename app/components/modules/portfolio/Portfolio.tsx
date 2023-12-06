@@ -11,7 +11,6 @@ import {
   PortfolioSubtitle,
   PortfolioTitle,
   Section,
-
 } from "./Portfolio.styles";
 import { portfolios } from "../../../models/PortifolioModels";
 
@@ -43,7 +42,7 @@ export default function () {
               transform: activeCard === index ? "scale(1.05)" : "scale(1)",
             }}
           >
-            <PortfolioImage src={portfolio.src} alt={portfolio.title} />
+            <PortfolioImage src={portfolio.src}/>
             <PortfolioModel
               style={{ bottom: activeCard === index ? "0" : "-100%" }}
             >

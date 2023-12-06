@@ -9,7 +9,7 @@ import NextProject from "./components/modules/nextproject/nextproject";
 import Detailsdesign from "./components/modules/details/detailsdesign/Detailsdesign";
 import Portfolio from "./components/modules/portfolio/Portfolio";
 import Plans from "./components/modules/plans/Plans";
-import Detailsmarketing from "./components/modules/details/detailsmarketing/Detailsmarketing";
+import Detailsmarketing from "./components/modules/details/detailssocialmedia/Detailssocialmedia";
 import Detailswebsites from "./components/modules/details/detailswebsites/Detailswebsites";
 import Questions from "./components/modules/questions/Questions";
 import Clients from "./components/modules/clients/clients";
@@ -27,13 +27,13 @@ export default function Home() {
       <Detailsdesign />
       <Portfolio />
       <Detailsmarketing />
-      <NextProject />
+      <Details />
       <Plans />
       <Detailswebsites />
       <Clients />
       <Contact />
       <Questions />
-      <Details />
+      <NextProject />
       <Footer />
     </main>
   );

@@ -7,9 +7,9 @@ export const Section = styled("section")`
 `;
 
 export const ClienTitle = styled("section")`
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   color: var(--fifth-color);
-  font-size: var(--big-font-size);
+  font-size: var(--h3-font-size);
   text-align: center;
 `;
 
@@ -47,3 +47,4 @@ export const ClientLogo = styled("img")`
   max-width: 100%;
   max-height: 100%;
 `;
+

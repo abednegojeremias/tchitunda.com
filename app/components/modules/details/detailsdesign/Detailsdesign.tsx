@@ -10,48 +10,57 @@ import {
   DetailDescription,
   DetailData,
   DetailButton,
-  DetailStaps,
-  DetailStapsList,
   DetailStapsIcon,
   DetailStapsTitle,
   DetailStapsDescription,
+  DataStaps,
 } from "./Detailsdesign.styles";
+import { Link, LinkProps } from "react-scroll";
 import { detailshomestaps } from "../../../../models/DetailsdesignModels";
 
 export default function Datailsdesign() {
   return (
-    <Section className={`${styles.section} ${styles.grid}`}>
+    <Section className={`${styles.section}`}>
       <DetailHomes className={styles.container}>
         <DetailData>
           <DetailTitle>HOW DESIGN WORKS</DetailTitle>
           <DetailSubtitle>
-            We love bringing ideas to life and bringing perfect solutions for
-            your business.
+            Build Your Digital Presence with Style and Impact
           </DetailSubtitle>
           <DetailDescription>
-            Every idea is a seed of potential, a spark that can grow into
-            something extraordinary when cultivated with passion and expertise.
-            It is with this commitment that we approach each project, ready to
-            embrace challenges and seek solutions that not only meet, but exceed
-            your expectations
+            We go beyond aesthetics - we create a unique visual experience that
+            defines your brand. Combining beauty and functionality, our engaging
+            design not only attracts, but builds a lasting connection with your
+            audience.
           </DetailDescription>
-          <DetailButton href="">
-            See Plans <i className="ri-send-plane-fill"></i>{" "}
-          </DetailButton>
+          <Link
+            href=""
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={10}
+            duration={500}
+          >
+            <DetailButton>
+              {" "}
+              Let's talk <i className="ri-send-plane-fill"></i>{" "}
+            </DetailButton>
+          </Link>
         </DetailData>
-        <DetailStaps>
+
+        <div>
           {detailshomestaps.map((detailshomestap, index) => (
-            <DetailStapsList key={index}>
-              <DetailStapsTitle>
-                <DetailStapsIcon className={detailshomestap.icon} />{" "}
-                {detailshomestap.title}
-              </DetailStapsTitle>
+            <li key={index}>
+              <DataStaps>
+                <DetailStapsIcon>{detailshomestap.number} </DetailStapsIcon>
+                <DetailStapsTitle> {detailshomestap.title}</DetailStapsTitle>
+              </DataStaps>
               <DetailStapsDescription>
                 {detailshomestap.description}
               </DetailStapsDescription>
-            </DetailStapsList>
+            </li>
           ))}
-        </DetailStaps>
+        </div>
       </DetailHomes>
     </Section>
   );

@@ -81,15 +81,20 @@ export const PortfolioModel = styled("div")`
   display: flex;
 `;
 
-export const PortfolioTitle = styled("div")`
+export const PortfolioTitle = styled("h3")`
+  color: var(--second-color);
+  font-size: .9rem;
+  font-family: 800;
   margin-bottom: 0.75rem;
 `;
 
-export const PortfolioSubtitle = styled("div")`
+export const PortfolioSubtitle = styled("h3")`
   display: block;
+  color: var(--second-color);
   margin-bottom: 0.25rem;
 `;
 
 export const PortfolioDescriptions = styled("p")`
-font-size: var(--smaal-font-size);
+  font-size: var(--smaal-font-size);
+  max-width: 300px;
 `;

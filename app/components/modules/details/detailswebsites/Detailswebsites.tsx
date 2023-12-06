@@ -2,7 +2,7 @@
 import "../../../../globals.css";
 import styles from "../../../../page.module.css";
 import React from "react";
-import { detailshomestaps } from "../../../../models/DetailswebsiteModels";
+import { detailshomestaps } from "../../../../models/DetailssocialmediaModels";
 import {
   Section,
   DetailHomes,
@@ -11,47 +11,56 @@ import {
   DetailDescription,
   DetailData,
   DetailButton,
-  DetailStaps,
-  DetailStapsList,
+  DataStaps,
   DetailStapsIcon,
   DetailStapsTitle,
   DetailStapsDescription,
-} from "./Detailswebsites.styles";
 
-export default function Detailswebsites () {
+} from "./Detailswebsites.styles";
+import { Link } from "react-scroll";
+
+export default function Detailsmarketing() {
   return (
     <Section className={`${styles.section} ${styles.grid}`}>
       <DetailHomes className={styles.container}>
         <DetailData>
-          <DetailTitle>HOW MARKETING WORKS</DetailTitle>
-          <DetailSubtitle>
-            We love bringing ideas to life and bringing perfect solutions for
-            your business.
-          </DetailSubtitle>
+          <DetailTitle>HOW WEB DEVELOPMENT WORKS</DetailTitle>
+          <DetailSubtitle>Presence on social media</DetailSubtitle>
           <DetailDescription>
-            Every idea is a seed of potential, a spark that can grow into
-            something extraordinary when cultivated with passion and expertise.
-            It is with this commitment that we approach each project, ready to
-            embrace challenges and seek solutions that not only meet, but exceed
-            your expectations
+            A presence on social media is an essential digital marketing tool,
+            but many companies, especially small ones, still do not take
+            advantage of this opportunity due to a lack of time and resources.
+            We offer customized solutions to overcome these obstacles, helping
+            businesses build a strong and impactful online presence.
           </DetailDescription>
-          <DetailButton href="">
-            Let's Talk <i className="ri-send-plane-fill"></i>{" "}
-          </DetailButton>
+          <Link
+            href=""
+            to="plans"
+            spy={true}
+            smooth={true}
+            offset={10}
+            duration={500}
+          >
+            <DetailButton>
+              {" "}
+              See Plans <i className="ri-send-plane-fill"></i>{" "}
+            </DetailButton>
+          </Link>
         </DetailData>
-        <DetailStaps>
+
+        <div>
           {detailshomestaps.map((detailshomestap, index) => (
-            <DetailStapsList key={index}>
-              <DetailStapsTitle>
-                <DetailStapsIcon className={detailshomestap.icon} />{" "}
-                {detailshomestap.title}
-              </DetailStapsTitle>
+            <li key={index}>
+              <DataStaps>
+                <DetailStapsIcon>{detailshomestap.number} </DetailStapsIcon>
+                <DetailStapsTitle> {detailshomestap.title}</DetailStapsTitle>
+              </DataStaps>
               <DetailStapsDescription>
                 {detailshomestap.description}
               </DetailStapsDescription>
-            </DetailStapsList>
+            </li>
           ))}
-        </DetailStaps>
+        </div>
       </DetailHomes>
     </Section>
   );

@@ -10,6 +10,7 @@ import {
   CallActionTitle,
   Section,
 } from "./Callaction.styles";
+import { Link } from "react-scroll";
 
 export default function CallAction() {
   return (
@@ -17,17 +18,27 @@ export default function CallAction() {
       <CallActionContent>
         <CallActionData>
           <CallActionTitle>
-            We love to make perfect solutions for your business
+            We love to make perfect solutions for yourproject or business
           </CallActionTitle>
           <CallActionDescription>
-            Why I say old chap that is, spiffing off his nut cor blimey guvnords
-            geeza bloke knees up bobby, sloshed arse William cack Richard. Bloke
-            fanny around chesed of bum bag old lost the pilot say there spiffing
-            off his nut.
+            Our passion is translating challenges into opportunities. We love
+            creating perfect solutions to boost your business, offering
+            innovation, excellence and exceptional results. Discover how we can
+            elevate your brand by optimizing every aspect of your path to
+            success
           </CallActionDescription>
-          <CallActionButton href="">
-            Let's Talk <i className="ri-send-plane-fill"></i>
-          </CallActionButton>
+          <Link
+            href=""
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={10}
+            duration={500}
+          >
+            <CallActionButton>
+              Let's Talk <i className="ri-send-plane-fill"></i>
+            </CallActionButton>
+          </Link>
         </CallActionData>
       </CallActionContent>
     </Section>

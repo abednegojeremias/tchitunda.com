@@ -20,24 +20,24 @@ export const CallActionContent = styled("div")`
 
 export const CallActionData = styled("div")`
   color: var(--second-color);
-  text-align: center;
-  max-width: 600px;
-  text-align: center;
-  text-overflow: ellipsis;
-  margin: 0 auto;
-  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    text-align: center;
+    max-width: 600px;
+    text-align: center;
+    text-overflow: ellipsis;
+    margin: 0 auto;
+  }
 `;
 
 export const CallActionTitle = styled("h3")`
-  font-size: var(--h1-font-size);
+  font-size: var(--big-font-size);
   margin-bottom: 1.5rem;
 
   @media screen and (min-width: 320px) and (max-width: 768px) {
     font-size: 1.6rem;
   }
 `;
-
-export const CallActionSubtitle = styled("h3")``;
 
 export const CallActionDescription = styled("p")`
   margin-bottom: 2rem;
@@ -46,12 +46,12 @@ export const CallActionDescription = styled("p")`
   }
 `;
 
-export const CallActionButton = styled("a")`
+export const CallActionButton = styled("span")`
   display: inline-block;
   background-color: var(--second-color);
   padding: 1.125rem 3rem;
   border-radius: var(--smaal-font-size);
-  width: 50%;
+  margin-bottom: 2rem;
   text-align: center;
   color: var(--first-color);
   transition: box-shadow 0.4s;
@@ -59,9 +59,5 @@ export const CallActionButton = styled("a")`
 
   :hover {
     box-shadow: var(--box-shadow-button);
-  }
-  
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    width: 67%;
   }
 `;

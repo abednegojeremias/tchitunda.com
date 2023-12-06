@@ -5,20 +5,88 @@ export const Section = styled("section")`
   background-color: var(--second-color);
 `;
 
-export const PlanContainer = styled("div")`
+export const Input = styled("input")`
+  display: none;
+`;
+
+export const Header = styled("div")`
+  max-width: 290px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+`;
+
+export const HeaderOptions = styled("header")`
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 55px;
+  border: 1px solid var(--first-color);
+  border-radius: 10px;
+  max-width: 600px;
+`;
+
+export const Label = styled("label")`
+  height: 100%;
+  width: 40%;
+  display: flex;
+  z-index: 2;
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transform: all 0.3s ease;
+
+  &:nth-child(2) {
+    width: 40%;
+  }
+`;
+
+export const Slider = styled("div")`
+  position: absolute;
+  height: 85%;
+  border-radius: inherit;
+  background: var(--first-color);
+  transform: all 0.3s ease;
+`;
+
+export const SliderPlan1 = styled(Slider)`
+  left: 0%;
+  width: 90px;
+  transform: translateX(5%);
+`;
+
+export const SliderPlan2 = styled(Slider)`
+  left: 50%;
+  width: 120px;
+  transform: translateX(-50%);
+`;
+
+export const SliderPlan3 = styled(Slider)`
+  left: 100%;
+  width: 95px;
+  transform: translateX(-105%);
+`;
+
+export const Cards = styled("div")`
   row-gap: 2rem;
   justify-content: center;
   padding-block: 1rem;
   display: grid;
 
   @media screen and (min-width: 320px) {
-    grid-template-columns: repeat(1, 290px);
+    grid-template-columns: repeat(1, 300px);
+    gap: 1.5rem;
+    display: grid;
+  }
+  @media screen and (min-width: 375px) {
+    grid-template-columns: repeat(1, 342px);
     gap: 1.5rem;
     display: grid;
   }
 
   @media screen and (min-width: 425px) {
-    grid-template-columns: repeat(1, 330px);
+    grid-template-columns: repeat(1, 375px);
     gap: 1.5rem;
     display: grid;
   }
@@ -40,53 +108,134 @@ export const PlanContainer = styled("div")`
     padding-block: 2.5rem 4rem;
   }
 `;
-export const PlanContent = styled("article")`
-  position: relative;
-  background-color: #fff;
+
+export const PlanContainer = styled("div")``;
+export const PlanContent = styled("div")`
+  border: 1px solid var(--first-color);
+  margin-bottom: 1.5rem;
+  width: 100%;
   padding: 2rem 1.5rem 2.5rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.318);
+  border-radius: var(--smaal-font-size);
   transition: 0.4s;
 
-  :hover {
-    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.318);
+  @media screen and (min-width: 768px) {
+    height: 83%;
   }
 `;
-export const CardHeader = styled("div")``;
 
-export const CardMonth = styled("div")`
-  color: #8415c9;
+export const CardsBox = styled("div")``;
+export const CardsDetails = styled("div")`
+  overflow: hidden;
 `;
-export const CardPrice = styled("span")`
-  font-size: 2rem;
+
+export const Box = styled("ul")`
+  transition: all 0.3s ease;
 `;
-export const CardPricing = styled("div")``;
-export const CardButton = styled("a")`
+export const Box1 = styled("li")`
+  margin-left: 0%;
+`;
+
+export const Box2 = styled("div")`
+  margin-left: 0%;
+`;
+
+export const Box3 = styled("div")`
+  margin-left: 0%;
+`;
+
+export const PricingDeatils = styled("div")`
+  margin: 20px 0;
+
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e6e6e6;
+`;
+
+export const Span = styled("span")`
+  font-size: 65px;
+  font-weight: 600;
+  position: relative;
+`;
+export const Month = styled("p")`
+  font-size: 13px;
+  right: -50px;
+  bottom: 17px;
+  position: absolute;
+  font-weight: 400;
+`;
+export const Subtitle = styled("h3")`
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: 2rem;
+`;
+
+export const Descriptions = styled("p")`
+  font-size: 18px;
+  margin-top: 5px;
+`;
+export const Data = styled("article")`
+  font-size: 15px;
+  list-style: none;
+  margin-bottom: 10px;
+`;
+
+export const Icon = styled("i")`
+  color: var(--first-color);
+`;
+
+export const CardButton = styled("span")`
+  border: 1px solid var(--first-color);
+  border-radius: 0.5rem;
   display: inline-block;
-  background-color: var(--first-color);
   padding: 1.125rem 3rem;
   border-radius: var(--smaal-font-size);
   width: 100%;
   text-align: center;
-  color: var(--second-color);
+  color: var(--first-color);
   transition: box-shadow 0.4s;
   font-weight: 600;
 
   :hover {
-    box-shadow: var(--box-shadow-button);
+    color: var(--fifth-color);
   }
 `;
-export const CardTitle = styled("h1")`
-  font-size: 2rem;
+
+export const Personalization = styled("div")`
+  margin-top: 0.9rem;
+  max-width: 1015px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.7rem;
+  background-color: var(--first-color);
+  font-weight: 600;
+  text-align: left;
+  border-radius: var(--smaal-font-size);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  @media screen and (min-width: 1152px) {
+    margin-inline: auto;
+  }
+`;
+export const PersalSpan = styled("span")`
+  font-size: var(--h3-font-size);
+  color: var(--second-color);
+
+  @media screen and (min-width: 320px) and (max-width: 526px) {
+    font-size: 1rem;
+  }
+`;
+export const PersalLink = styled("a")`
+  padding: 1.125rem 2rem;
+  background-color: var(--second-color);
   color: var(--first-color);
-`;
-export const CardSubtitle = styled("h4")``;
-export const CardIcon = styled("i")`
-  font-size: 2rem;
-  margin-right: 0.5rem;
-  color: #8415c9;
-`;
-export const CardDescription = styled("p")`
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  :hover {
+    box-shadow: var(--box-shadow-button);
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 526px) {
+    font-size: 0.7rem;
+    padding: 1.125rem 1rem;
+  }
 `;

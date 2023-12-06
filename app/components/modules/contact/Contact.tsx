@@ -1,10 +1,73 @@
 "use client";
 import "../../../globals.css";
 import styles from "../../../page.module.css";
-import React from "react";
-import { Section } from "./Contact.styles";
+import React, { useRef, useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
+import {
+  ContactContent,
+  ContactDescriptions,
+  ContactIcon,
+  ContactOption,
+  ContactOptions,
+  ContactSubtitle,
+  ContactTitle,
+  Form,
+  Input,
+  InputButton,
+  Label,
+  Section,
+  Span,
+  Textearea,
+} from "./Contact.styles";
+import { contact } from "../../../models/ContactModels";
 
 export default function Contact() {
+  const form = useRef<HTMLFormElement | null>(null);
+  const [messageSent, setMessageSent] = useState(false);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_iou2cbm",
+          "template_608x0nu",
+          form.current,
+          "3q7pHBygvITu6DsFT"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("message sent");
+            setMessageSent(true);
+            if (form.current) {
+              form.current.reset(); 
+            }
+          
+          },
+          (error) => {
+            console.log(error.text);
+           
+          }
+        );
+    } else {
+      console.error("Form ref is undefined");
+
+    }
+  };
+  useEffect(() => {
+    if (messageSent) {
+      const timeoutId = setTimeout(() => {
+        setMessageSent(false);
+      }, 4000);  
+
+      return () => {
+        clearTimeout(timeoutId);
+      };
+    }
+  }, [messageSent]);
+
   return (
     <Section className={styles.section} id="contact">
       <h2 className={styles.sectiontitle}>CONTACT</h2>
@@ -16,6 +79,48 @@ export default function Contact() {
         to participate in a transformative journey, where words turn into
         actions and dreams come to life.
       </p>
+
+      {messageSent && (
+        <div className={styles.successMessage}>
+          <p>Message sent successfully <i className="ri-check-double-line"></i></p>
+        </div>
+      )}
+
+      <ContactContent>
+        <ContactOptions>
+          {contact.map((contacts, index) => (
+            <ContactOption key={index}>
+              <ContactIcon className={contacts.icon}/>
+              <ContactTitle>{contacts.title}</ContactTitle>
+              <ContactSubtitle>{contacts.subtitle}</ContactSubtitle>
+              <ContactDescriptions href={contacts.link}>
+                Send messange
+              </ContactDescriptions>
+            </ContactOption>
+          ))}
+        </ContactOptions>
+        <Form ref={form} onSubmit={sendEmail}>
+          <Label>
+            Name <Span>*</Span>
+          </Label>
+          <Input type="text" name="user_name" placeholder="Your Full Name "required />
+          <Label>
+            Email <Span>*</Span>
+          </Label>
+          <Input type="email" name="user_email" placeholder="Your Email" required />
+
+          <Label>
+            Phone Number <Span>*</Span>
+          </Label>
+          <Input type="tel" id="phone" name="user_phone" placeholder="Your Number" required />
+
+          <Label>
+            Message <Span>*</Span>
+          </Label>
+          <Textearea name="message" rows={7} placeholder="Your Mesaage" required />
+          <InputButton type="submit" value="Send" />
+        </Form>
+      </ContactContent>
     </Section>
   );
 }

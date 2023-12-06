@@ -29,7 +29,7 @@ export default function Home() {
             <HomeDescriptions>
               {" "}
               <i className="ri-shield-check-fill"></i> The best solutions for
-              your business!{" "}
+              entrer digital!{" "}
             </HomeDescriptions>
 
             <Link

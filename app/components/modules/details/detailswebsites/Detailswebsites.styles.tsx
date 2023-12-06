@@ -8,7 +8,6 @@ export const Section = styled("section")`
     place-content: center;
   }
 `;
-
 export const DetailHomes = styled("div")`
   display: grid;
 
@@ -32,7 +31,6 @@ export const DetailHomes = styled("div")`
     column-gap: 10rem;
   }
 `;
-
 export const DetailData = styled("div")`
   @media screen and (min-width: 320px) {
     margin-bottom: 2rem;
@@ -55,7 +53,7 @@ export const DetailDescription = styled("p")`
   margin-bottom: 2rem;
 `;
 
-export const DetailButton = styled("a")`
+export const DetailButton = styled("span")`
   display: inline-block;
   background-color: var(--first-color);
   padding: 1.125rem 3rem;
@@ -71,28 +69,26 @@ export const DetailButton = styled("a")`
   }
 `;
 
-export const DetailStaps = styled("div")``;
-export const DetailStapsList = styled("li")``;
-
-export const DetailStapsIcon = styled("i")`
+export const DetailStapsIcon = styled("span")`
+  color: var(--first-color);
+  font-weight: 600;
+  font-size: 1rem;
   margin-bottom: 1rem;
-  border-radius: 7px;
-  padding: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: var(--first-color);
-  font-size: var(--big-font-size);
+  background-color: rgb(132, 21, 201);
+  padding: 7px 15px;
+  border-radius: 0.2rem;
   color: var(--second-color);
+`;
 
-  @media screen and (max-width: 448px) {
-    font-size: 1.5rem;
-  }
+export const DataStaps = styled("div")`
+  display: grid;
+  align-items: center;
+  column-gap: 0.8rem;
+  grid-template-columns: min-content 1fr;
 `;
 
 export const DetailStapsTitle = styled("h3")`
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  color: var(--fifth-color);
 `;
 
 export const DetailStapsDescription = styled("p")`
@@ -100,6 +96,5 @@ export const DetailStapsDescription = styled("p")`
 
   @media screen and (min-width: 1024px) {
     display: grid;
-    margin-left: 3.8rem;
   }
 `;
