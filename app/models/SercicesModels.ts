@@ -6,16 +6,16 @@ interface Service {
 
 export const services: Service[] = [
   {
-    title: "Digital Marketing",
+    title: "Graphic Design",
     description:
-      "Reach your target audience precisely through online advertising campaigns. From Google Ads to Facebook Ads, our strategic approach maximizes your return on investment.",
-    src: "images/icons/web-sites.svg",
+      "Turn your vision into visual reality with us. From branding to digital design, our strategic approach enhances your brand identity. We create authentic connections with impactful designs and conquer your space in the visual world.",
+    src: "images/icons/social-media.svg",
   },
   {
     title: "Social Media Management",
     description:
       "Dominate social media platforms with our expert management. We create engaging content, cultivate loyal communities, and strategically grow your digital presence.",
-    src: "images/icons/social-media.svg",
+    src: "images/icons/design.svg",
   },
   {
     title: "Responsive Website Development",

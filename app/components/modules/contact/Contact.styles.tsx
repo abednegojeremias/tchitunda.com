@@ -28,7 +28,7 @@ export const ContactContent = styled("div")`
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(1, 708px);
     gap: 1.5rem;
-    display: grid
+    display: grid;
   }
 
   @media screen and (min-width: 1023px) {
@@ -49,7 +49,7 @@ export const ContactContent = styled("div")`
 `;
 export const ContactOptions = styled("div")``;
 export const ContactOption = styled("article")`
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
   border-radius: 0.5rem;
   padding: 20px 20px;
   text-align: center;
@@ -65,19 +65,19 @@ export const ContactOption = styled("article")`
 `;
 
 export const ContactIcon = styled("i")`
-color: var(--second-color);
-font-size: 3rem;
-text-align: center;
+  color: var(--first-color);
+  font-size: var(--biggest-font-size);
+  text-align: center;
 `;
 export const ContactTitle = styled("h4")`
-color: var(--second-color);
+  color: var(--first-color);
 `;
 
 export const ContactSubtitle = styled("h5")`
-color: var(--second-color);
+  color: var(--first-color);
 `;
 export const ContactDescriptions = styled("a")`
-color: #520d7df4;
+  color: #520d7df4;
 `;
 
 export const Form = styled("form")`
@@ -97,8 +97,10 @@ export const Textearea = styled("textarea")`
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  background: var(--second-color);
-  /* border: 2px solid var(--first-color); */
+  border-color: var(--sixth-color);
+  background: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
   resize: none;
 
   ::placeholder {
@@ -110,12 +112,12 @@ export const Input = styled("input")`
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  background: var(--second-color);
-  /* border: 2px solid var(--first-color); */
+  background: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
   resize: none;
   ::placeholder {
     font-weight: 500;
-
   }
 `;
 

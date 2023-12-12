@@ -9,7 +9,7 @@ export const Footers = styled("div")`
   padding: 70px 50px;
   line-height: 30px;
 
-  @media screen and (min-width:  1152px) {
+  @media screen and (min-width: 1152px) {
     margin-inline: auto;
   }
 
@@ -38,15 +38,11 @@ export const FooterContainer = styled("div")`
   }
 `;
 
-export const FooterContent = styled("div")``;
-export const FooterData = styled("div")``;
-export const LogoImage = styled("div")``;
-
 export const Image = styled("img")`
   height: 40px;
   width: 160px;
 `;
-export const FooterCards = styled("div")``;
+
 export const FooterTitle = styled("h3")``;
 
 export const FooterDescriptions = styled("p")`
@@ -84,7 +80,11 @@ export const CardList = styled("li")`
   margin-bottom: 1rem;
 `;
 
-export const CardDescriptions = styled("a")`
+export const CardDescriptions = styled("span")`
+  color: var(--fifth-color);
+  display: inline-block;
+`;
+export const CardDescription = styled("a")`
   color: var(--fifth-color);
   display: inline-block;
 `;
@@ -94,4 +94,3 @@ export const FooterCopyRightText = styled("p")`
   text-align: center;
   color: #555;
 `;
-

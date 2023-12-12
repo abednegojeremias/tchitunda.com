@@ -43,9 +43,6 @@ export const DetailTitle = styled("h3")`
   margin-bottom: 1.5rem;
   border-left: 10px solid var(--first-color);
   padding-left: 20px;
-
-  
-
 `;
 
 export const DetailSubtitle = styled("h2")`

@@ -14,7 +14,9 @@ import { client } from "../../../models/ClientsModels";
 export default function Clients() {
   return (
     <Section className={`${styles.section} ${styles.gird} ${styles.container}`}>
-      <ClienTitle>Trusted By Thousands of Brands Worldwide</ClienTitle>
+      <ClienTitle>
+        Meet our partners, companies that trust our work and values.
+      </ClienTitle>
       <ClientData>
         {client.map((clients, index) => (
           <ClientBox key={index}>

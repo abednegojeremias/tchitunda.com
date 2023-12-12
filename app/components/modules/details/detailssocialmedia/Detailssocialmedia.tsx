@@ -21,7 +21,7 @@ import { Link } from "react-scroll";
 
 export default function Detailsmarketing() {
   return (
-    <Section className={`${styles.section} ${styles.grid}`}>
+    <Section className={`${styles.section} ${styles.grid}`} id="detailssocialmedia">
       <DetailHomes className={styles.container}>
         <DetailData>
           <DetailTitle>HOW SOCIAL MEDIA MANAGEMENT WORKS </DetailTitle>
@@ -35,7 +35,7 @@ export default function Detailsmarketing() {
           </DetailDescription>
           <Link
             href=""
-            to="plans"
+            to="contact"
             spy={true}
             smooth={true}
             offset={10}
@@ -43,7 +43,7 @@ export default function Detailsmarketing() {
           >
             <DetailButton>
               {" "}
-              See Plans <i className="ri-send-plane-fill"></i>{" "}
+              Let's start <i className="ri-send-plane-fill"></i>{" "}
             </DetailButton>
           </Link>
         </DetailData>

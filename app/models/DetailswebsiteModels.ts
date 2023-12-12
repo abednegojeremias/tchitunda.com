@@ -1,27 +1,26 @@
 interface DetailsHomeStaps {
-    icon: string;
-    title: string;
-    description: string;
-  }
-  
-  export const detailshomestaps: DetailsHomeStaps[] = [
-    {
-      icon: "ri-file-text-fill",
-      title: "1. Submit your requestur ",
-      description:
-        "Our AI-powered request form makes creative briefs a breeze. From built-in stock libraries to custom brand guides, you provide guidance on your vision in one place.",
-    },
-    {
-      icon: "ri-pencil-ruler-2-fill",
-      title: "2. Your Designer Gets to Work",
-      description:
-        "We assign work immediately based on the requirements in your project. Enjoy same-day turnaround on certain projects with some plans.",
-    },
-    {
-      icon: "ri-image-2-line",
-      title: "3. You have got a Design",
-      description:
-        "And if it’s not perfect? No problem! Our platform makes revision feedback simple and concise. Plus, all of our plans include unlimited revisions, and access to all source files.",
-    },
-  ];
-  
+  number: string;
+  title: string;
+  description: string;
+}
+
+export const detailshomestaps: DetailsHomeStaps[] = [
+  {
+    number: "1",
+    title: "Submit your requestur ",
+    description:
+      "Whether through our conventional chat or WhatsApp, the first step is easy. Choose one of our plans or share your vision, ideas and requirements. We are ready to listen and turn your ideas into reality.",
+  },
+  {
+    number: "2",
+    title: " Our Developer team Gets to Work",
+    description:
+      "Our development team starts the process as soon as we receive your request. We pay meticulous attention to every detail to ensure we create a website that fully meets your expectations.",
+  },
+  {
+    number: "3",
+    title: "You have got the Website",
+    description:
+      "After completing the project, we carry out a thorough review together with the client to ensure that every detail is aligned with their expectations. We then proceed to launch the website.",
+  },
+];

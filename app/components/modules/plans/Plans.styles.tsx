@@ -2,7 +2,7 @@ import "../../../globals.css";
 import { styled } from "@mui/system";
 
 export const Section = styled("section")`
-  background-color: var(--second-color);
+  background-color: var(--sixth-color);
 `;
 
 export const Input = styled("input")`
@@ -31,20 +31,20 @@ export const Label = styled("label")`
   display: flex;
   z-index: 2;
   position: relative;
-  font-size: 18px;
+  font-size: var(--normal-font-size);
   cursor: pointer;
   align-items: center;
   justify-content: center;
   transform: all 0.3s ease;
 
   &:nth-child(2) {
-    width: 40%;
+    width: 50%;
   }
 `;
 
 export const Slider = styled("div")`
   position: absolute;
-  height: 85%;
+  height: 90%;
   border-radius: inherit;
   background: var(--first-color);
   transform: all 0.3s ease;
@@ -156,7 +156,7 @@ export const Span = styled("span")`
   position: relative;
 `;
 export const Month = styled("p")`
-  font-size: 13px;
+  font-size: 0.8rem;
   right: -50px;
   bottom: 17px;
   position: absolute;
@@ -169,7 +169,7 @@ export const Subtitle = styled("h3")`
 `;
 
 export const Descriptions = styled("p")`
-  font-size: 18px;
+  font-size: 0.9rem;
   margin-top: 5px;
 `;
 export const Data = styled("article")`
@@ -180,6 +180,9 @@ export const Data = styled("article")`
 
 export const Icon = styled("i")`
   color: var(--first-color);
+`;
+export const IconX = styled("i")`
+  color: #656060;
 `;
 
 export const CardButton = styled("span")`
@@ -200,17 +203,17 @@ export const CardButton = styled("span")`
 `;
 
 export const Personalization = styled("div")`
-  margin-top: 0.9rem;
-  max-width: 1015px;
   display: flex;
   align-items: center;
+  margin-top: 0.9rem;
+  max-width: 1015px;
+  margin-inline: 1.5rem;
   justify-content: space-between;
   padding: 1rem 1.7rem;
   background-color: var(--first-color);
   font-weight: 600;
   text-align: left;
   border-radius: var(--smaal-font-size);
-  gap: 1rem;
   margin-bottom: 1.5rem;
 
   @media screen and (min-width: 1152px) {

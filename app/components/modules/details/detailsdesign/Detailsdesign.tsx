@@ -20,7 +20,7 @@ import { detailshomestaps } from "../../../../models/DetailsdesignModels";
 
 export default function Datailsdesign() {
   return (
-    <Section className={`${styles.section}`}>
+    <Section className={`${styles.section}`} id="detailsdesign">
       <DetailHomes className={styles.container}>
         <DetailData>
           <DetailTitle>HOW DESIGN WORKS</DetailTitle>

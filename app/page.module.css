@@ -1,3 +1,4 @@
+
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -63,17 +64,16 @@
 .active {
   color: #161717;
 }
-
+/******MESSAGE******/
 .successMessage {
   position: fixed;
   top: 10px;
   right: 10px;
-  background-color: #8415c9; 
+  background-color: #8415c9;
   color: #fff;
   padding: 10px;
   font-weight: 300;
-  border-radius:  0.5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 8px 24px rgba(32, 14, 43, 0.733);
-  z-index: 1000; 
-
+  z-index: 1000;
 }

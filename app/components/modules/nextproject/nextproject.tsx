@@ -23,7 +23,7 @@ export default function NextProject() {
             <NextProjectsTitle>LET'S TALK</NextProjectsTitle>
             <NextProjectsSubtitle>ABOUT YOUR</NextProjectsSubtitle>
             <NextProjectsDescription>NEXT PROJECT</NextProjectsDescription>
-            <NextProjectsButton href="">
+            <NextProjectsButton href="https://api.whatsapp.com/send?phone+244925423854">
               {" "}
               Get Started <i className="ri-send-plane-fill"></i>
             </NextProjectsButton>

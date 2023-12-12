@@ -42,25 +42,22 @@ export default function Contact() {
             console.log("message sent");
             setMessageSent(true);
             if (form.current) {
-              form.current.reset(); 
+              form.current.reset();
             }
-          
           },
           (error) => {
             console.log(error.text);
-           
           }
         );
     } else {
       console.error("Form ref is undefined");
-
     }
   };
   useEffect(() => {
     if (messageSent) {
       const timeoutId = setTimeout(() => {
         setMessageSent(false);
-      }, 4000);  
+      }, 4000);
 
       return () => {
         clearTimeout(timeoutId);
@@ -82,7 +79,9 @@ export default function Contact() {
 
       {messageSent && (
         <div className={styles.successMessage}>
-          <p>Message sent successfully <i className="ri-check-double-line"></i></p>
+          <p>
+            Message sent successfully <i className="ri-check-double-line"></i>
+          </p>
         </div>
       )}
 
@@ -90,7 +89,7 @@ export default function Contact() {
         <ContactOptions>
           {contact.map((contacts, index) => (
             <ContactOption key={index}>
-              <ContactIcon className={contacts.icon}/>
+              <ContactIcon className={contacts.icon} />
               <ContactTitle>{contacts.title}</ContactTitle>
               <ContactSubtitle>{contacts.subtitle}</ContactSubtitle>
               <ContactDescriptions href={contacts.link}>
@@ -103,21 +102,51 @@ export default function Contact() {
           <Label>
             Name <Span>*</Span>
           </Label>
-          <Input type="text" name="user_name" placeholder="Your Full Name "required />
+          <Input
+            type="text"
+            name="user_name"
+            placeholder="Your Full Name"
+            minLength={4}
+            pattern="[a-zA-Z ]{1,50}"
+            title="Please enter a valid name (up to 50 characters)"
+            required
+          />
           <Label>
             Email <Span>*</Span>
           </Label>
-          <Input type="email" name="user_email" placeholder="Your Email" required />
+          <Input
+            type="email"
+            name="user_email"
+            placeholder="Your Email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            title="Please enter a valid email address"
+            required
+          />
 
           <Label>
             Phone Number <Span>*</Span>
           </Label>
-          <Input type="tel" id="phone" name="user_phone" placeholder="Your Number" required />
+
+          <Input
+            type="tel"
+            id="phone"
+            name="user_phone"
+            placeholder="Your Number"
+            pattern="[0-9]{9,12}"
+            title="Please enter a valid phone number (9 to 12 digits)"
+            required
+          />
 
           <Label>
             Message <Span>*</Span>
           </Label>
-          <Textearea name="message" rows={7} placeholder="Your Mesaage" required />
+          <Textearea
+            name="message"
+            rows={7}
+            placeholder="Your Mesaage"
+            title="Please enter a message (up to 500 characters)"
+            required
+          />
           <InputButton type="submit" value="Send" />
         </Form>
       </ContactContent>

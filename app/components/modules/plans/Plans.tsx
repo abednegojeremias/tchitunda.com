@@ -31,6 +31,7 @@ import {
   PersalLink,
   PersalSpan,
   Month,
+  IconX,
 } from "./Plans.styles";
 import { plan } from "../../../models/PlansModels";
 import { Link } from "react-scroll";
@@ -44,7 +45,7 @@ export default function Plans() {
   };
 
   return (
-    <Section className={`${styles.section} ${styles.container}`} id="plans">
+    <Section className={`${styles.section}`} id="plans">
       <h2 className={styles.sectiontitle}>Our Plans</h2>
       <h3 className={styles.sectionsubtitle}>Pricing and Plans</h3>
       <p className={styles.sectiondescription}>Discover our plans</p>
@@ -74,7 +75,7 @@ export default function Plans() {
               color: selectedPlan === "plan-2" ? "#fff" : "#000",
             }}
           >
-            Light
+            Standard
           </Label>
 
           <Label
@@ -85,7 +86,7 @@ export default function Plans() {
               color: selectedPlan === "plan-3" ? "#fff" : "#000",
             }}
           >
-            Pro
+            Premium
           </Label>
 
           {selectedPlan === "plan-1" && <SliderPlan1 />}
@@ -424,7 +425,7 @@ export default function Plans() {
                       <PricingDeatils>
                         <Subtitle>WebSites</Subtitle>
                         <Span>
-                          R200 <Month>/single</Month>{" "}
+                          R2500 <Month>/month</Month>{" "}
                         </Span>
                       </PricingDeatils>
                       {plan.map((plans, index) => (
@@ -464,18 +465,6 @@ export default function Plans() {
                             <Icon className={plans.icon50} />{" "}
                             {plans.description50}
                           </Descriptions>
-                        </Data>
-                      ))}
-                    </Box1>
-                  )}
-                  {selectedBox === "box-2" && (
-                    <Box2 className="box-2">
-                      <PricingDeatils>
-                        <Subtitle>WebSites</Subtitle>
-                        <Span>R300</Span>
-                      </PricingDeatils>
-                      {plan.map((plans, index) => (
-                        <Data key={index}>
                           <Descriptions>
                             {" "}
                             <Icon className={plans.icon51} />{" "}
@@ -486,6 +475,20 @@ export default function Plans() {
                             <Icon className={plans.icon52} />{" "}
                             {plans.description52}
                           </Descriptions>
+                        </Data>
+                      ))}
+                    </Box1>
+                  )}
+                  {selectedBox === "box-2" && (
+                    <Box2 className="box-2">
+                      <PricingDeatils>
+                        <Subtitle>WebSites</Subtitle>
+                        <Span>
+                          R3500 <Month>/month</Month>
+                        </Span>
+                      </PricingDeatils>
+                      {plan.map((plans, index) => (
+                        <Data key={index}>
                           <Descriptions>
                             {" "}
                             <Icon className={plans.icon53} />{" "}
@@ -516,18 +519,6 @@ export default function Plans() {
                             <Icon className={plans.icon58} />{" "}
                             {plans.description58}
                           </Descriptions>
-                        </Data>
-                      ))}
-                    </Box2>
-                  )}
-                  {selectedBox === "box-3" && (
-                    <Box3 className="Box-3">
-                      <PricingDeatils>
-                        <Subtitle>WebSites</Subtitle>
-                        <Span>R400</Span>
-                      </PricingDeatils>
-                      {plan.map((plans, index) => (
-                        <Data key={index}>
                           <Descriptions>
                             {" "}
                             <Icon className={plans.icon59} />{" "}
@@ -548,6 +539,20 @@ export default function Plans() {
                             <Icon className={plans.icon62} />{" "}
                             {plans.description62}
                           </Descriptions>
+                        </Data>
+                      ))}
+                    </Box2>
+                  )}
+                  {selectedBox === "box-3" && (
+                    <Box3 className="Box-3">
+                      <PricingDeatils>
+                        <Subtitle>WebSites</Subtitle>
+                        <Span>
+                          R6000<Month>/month</Month>
+                        </Span>
+                      </PricingDeatils>
+                      {plan.map((plans, index) => (
+                        <Data key={index}>
                           <Descriptions>
                             {" "}
                             <Icon className={plans.icon63} />{" "}
@@ -562,6 +567,41 @@ export default function Plans() {
                             {" "}
                             <Icon className={plans.icon65} />{" "}
                             {plans.description65}
+                          </Descriptions>
+                          <Descriptions>
+                            {" "}
+                            <Icon className={plans.icon66} />{" "}
+                            {plans.description66}
+                          </Descriptions>
+                          <Descriptions>
+                            {" "}
+                            <Icon className={plans.icon67} />{" "}
+                            {plans.description67}
+                          </Descriptions>
+                          <Descriptions>
+                            {" "}
+                            <Icon className={plans.icon68} />{" "}
+                            {plans.description68}
+                          </Descriptions>
+                          <Descriptions>
+                            {" "}
+                            <Icon className={plans.icon69} />{" "}
+                            {plans.description69}
+                          </Descriptions>
+                          <Descriptions>
+                            {" "}
+                            <Icon className={plans.icon70} />{" "}
+                            {plans.description70}
+                          </Descriptions>
+                          <Descriptions>
+                            {" "}
+                            <Icon className={plans.icon71} />{" "}
+                            {plans.description71}
+                          </Descriptions>
+                          <Descriptions>
+                            {" "}
+                            <Icon className={plans.icon72} />{" "}
+                            {plans.description72}
                           </Descriptions>
                         </Data>
                       ))}
@@ -586,7 +626,9 @@ export default function Plans() {
 
       <Personalization>
         <PersalSpan>Have higher or different needs?</PersalSpan>
-        <PersalLink href="/">WhatsApp</PersalLink>
+        <PersalLink href="https://api.whatsapp.com/send?phone+244925423854">
+          WhatsApp
+        </PersalLink>
       </Personalization>
     </Section>
   );

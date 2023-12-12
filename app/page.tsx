@@ -13,7 +13,7 @@ import Detailsmarketing from "./components/modules/details/detailssocialmedia/De
 import Detailswebsites from "./components/modules/details/detailswebsites/Detailswebsites";
 import Questions from "./components/modules/questions/Questions";
 import Clients from "./components/modules/clients/clients";
-import Details from "./components/modules/callaction/Callaction";
+import Callaction from "./components/modules/callaction/Callaction";
 import Contact from "./components/modules/contact/Contact";
 
 export default function Home() {
@@ -27,9 +27,9 @@ export default function Home() {
       <Detailsdesign />
       <Portfolio />
       <Detailsmarketing />
-      <Details />
-      <Plans />
+      <Callaction />
       <Detailswebsites />
+      <Plans />
       <Clients />
       <Contact />
       <Questions />

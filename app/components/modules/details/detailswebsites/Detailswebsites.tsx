@@ -2,7 +2,7 @@
 import "../../../../globals.css";
 import styles from "../../../../page.module.css";
 import React from "react";
-import { detailshomestaps } from "../../../../models/DetailssocialmediaModels";
+import { detailshomestaps } from "../../../../models/DetailswebsiteModels";
 import {
   Section,
   DetailHomes,
@@ -15,23 +15,27 @@ import {
   DetailStapsIcon,
   DetailStapsTitle,
   DetailStapsDescription,
-
 } from "./Detailswebsites.styles";
 import { Link } from "react-scroll";
 
 export default function Detailsmarketing() {
   return (
-    <Section className={`${styles.section} ${styles.grid}`}>
+    <Section
+      className={`${styles.section} ${styles.grid}`}
+      id="detailswebsites"
+    >
       <DetailHomes className={styles.container}>
         <DetailData>
           <DetailTitle>HOW WEB DEVELOPMENT WORKS</DetailTitle>
-          <DetailSubtitle>Presence on social media</DetailSubtitle>
+          <DetailSubtitle>Business in current times</DetailSubtitle>
           <DetailDescription>
-            A presence on social media is an essential digital marketing tool,
-            but many companies, especially small ones, still do not take
-            advantage of this opportunity due to a lack of time and resources.
-            We offer customized solutions to overcome these obstacles, helping
-            businesses build a strong and impactful online presence.
+            In an increasingly connected world, online presence is crucial to
+            business success. Having a website is not just an advantage, but a
+            necessity. It not only expands the company's global visibility, but
+            also builds its digital identity, acting as a virtual storefront.
+            This online presence is the first impression many potential
+            customers will have, directly influencing their perception of your
+            brand.
           </DetailDescription>
           <Link
             href=""

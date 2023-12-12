@@ -11,6 +11,9 @@ export const ClienTitle = styled("section")`
   color: var(--fifth-color);
   font-size: var(--h3-font-size);
   text-align: center;
+  @media screen and (max-width: 320px) {
+    font-size: var(--normal-font-size);
+  }
 `;
 
 export const ClientData = styled("div")`
@@ -47,4 +50,3 @@ export const ClientLogo = styled("img")`
   max-width: 100%;
   max-height: 100%;
 `;
-
