@@ -12,8 +12,7 @@ export const SectionTitle = styled("h1")`
 `;
 
 export const QuestionContainer = styled("div")`
-  max-width: 800px;
-  margin: 0 auto;
+  color: var(--fifth-color);
 `;
 
 export const QuestionData = styled("div")`
